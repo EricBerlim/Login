@@ -1,5 +1,4 @@
-/*Zerar os padrões do body*/
-body{
+body{ /*Zerar os padrões do body*/
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -66,6 +65,10 @@ body{
     transition: 0.3s ease-in-out;
 }
 
+.login__input:focus + .login__input-border::after{ /*Efeito ao clicar no input*/
+    width: 100%;
+}
+
 .login__submit{
     height: 48px;
     width: 100%;
@@ -82,6 +85,10 @@ body{
     border-radius: 4px;
     cursor: pointer;
     transition: 0.5s ease-in-out;
+}
+
+.login__submit:hover{ /*Efeito cintilante ao deixar sobre o botão*/
+    background-position: right;
 }
 
 .login__reset{
